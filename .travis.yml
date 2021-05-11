@@ -19,7 +19,8 @@ before_deploy:
 deploy:
   provider: releases
   skip_cleanup: true
-  api_key: "$GITHUB_OAUTH_TOKEN"
+  api_key:
+    secure: bjvOArlgPVfsnDcF/qPV7Yz0fq66mt+DD5EWBUFy2a2eq1U04GiBCaQm5q+XkZLMKQZsUSKZj9lC+TLdjzJC9dUxQtifOv3WdzvV3/481Y+QTS3XTLuqr2vba0Glkd5TuH9dZBf5FKxrKsOBn2jn18UyQ8kTNImKxwx7gdv5EGt++AMOSnkBWdPaQSc435Ag2FR2ssOHd3DvtvZc+Xp+eoCZYXRXS2kSuWBtlsx8ztC9a1ObiB0mZGX4vJZQz4YaqrnYkzEoeenXcyAZvImfCsP+eEFv/0aU41uMzWeZEjrkI5a+cm9XNGfewTWp+sxzfRbP6jW0n5xVUQHpRDahRyyBFEQskrEldUiTFjPJD3vi54l7trof/jvKgGRsBTM2yrvzC+gC1y06wNv2c0NLUV5OzPEOsKTRbrgs8BmznmVOjzQIRWO414nkztcCffF62cRFYKAhcP4MYBhw/jBlREwUeisFwox+SpyG2LELKW1ZS0W7Y5GbuvZTzhZH8aJGudOx/VrjrIvMcmAjHNApdoqpj9FNlWX3fnfhQBHQj00CA0RkWVJnx/UQvh9t1c0qT0OucfQp8mA0emnLZcC7uEFvGSuwfto3NGXak0WTv3CLuQ8sTXO0m36iyUQSsSbNNdKoMNV6RiAj9sxfE+pBH0GWHl6gCkSX7uDEF4ujm/g=
   file_glob: true
   file: "${RELEASE_PKG_FILE}"
   on:
