@@ -28,9 +28,9 @@ int IOHIDEventGetIntegerValue(struct __IOHIDEvent *event,long long value);
 					volumeupcount++;
 					if(volumedowncount==volumeupcount){
 						if(volumedowncount==1){
-							system("sbreload");
+							// system("sbreload");
 						}else if(volumedowncount==2){
-							system("ldrestart");
+							// system("ldrestart");
 						}else if(volumedowncount==3){
 							exit(1);
 						}
