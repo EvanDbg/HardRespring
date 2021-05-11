@@ -27,4 +27,4 @@ deploy:
   file: "${RELEASE_PKG_FILE}"
   on:
     repo: EvanDbg/HardRespring
-    branch: master
+    branch: main
