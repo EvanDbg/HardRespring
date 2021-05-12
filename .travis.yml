@@ -15,7 +15,7 @@ before_deploy:
 deploy:
   provider: releases
   skip_cleanup: true
-  github_token: $API_KEY
+  token: $API_KEY
   file_glob: true
   file: "${RELEASE_PKG_FILE}"
   on:
