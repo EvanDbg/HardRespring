@@ -16,7 +16,7 @@ deploy:
   provider: releases
   skip_cleanup: true
   api_key:
-    secure: "$API_KEY"
+    secure: "ZUrFJ0ihN5TA9Owj8a0lvKG0DfToVr8R6AitEUWjixSXlucIKefy3154TY89vHhW+9KuGPn7QARcwfQMEegoUDPmxTMsKPxxi0aG9YMMGPUsdgew0+BcmumE4uQ9Qa2UqrG2aFO2O5Y4C4o2HRevFKbwuYp7spDb0bqxLbB8fBptmheoQmMqWCNoviGG3/AI8pccMOImpQGIJvBbnKb1XDxRkAESir2nV7Pk8Iaq9nFmTKrPKOkpmJpf4K7CSUgq8XqzrateEDSkYbTmqC1QeUMmwfS2YtEs1sqrT/mQ1npqHbWQb+GwKqr59n9qaJBScTpIlgMdxIQFrZhyP10ReOrLEauSvFca0D88/aZ7O70vPX6ujKRp2qal2CSaI5Vf8MDCvtCLC/jPHKugQ5xCSwXXpcM3R8DITjonASywr56cXwuZtj9YdQ41Xmybe2abhcyA6jFDwEBfffwhgkjerm4WVp3QKL4925o1LxRcP8uDnV5S9Su/72IMukeJWPoMLlpWBvGUTSIZVNdEvuClsrToU7IEp+BYVUABTWpkBL4QYlLeoSwseiXnhZsX8yniQGpaN+5u/j0wxbnHDmVtLyRSQMB7+yXksEAmB6StUUVuD2eaoUO15qC+z0W9jZl7lMqD+V2DADsnjh41ttHXkdDmStxVT9g0jFDoFtlArAU="
   file_glob: true
   file: "${RELEASE_PKG_FILE}"
   on:
