@@ -11,11 +11,7 @@ before_install:
 script:
 - make clean package FINALPACKAGE=1
 before_deploy:
-- git config --local user.name "EvanDbg"
-- git config --local user.email "yangf1023@icloud.com"
 - export RELEASE_PKG_FILE=$(ls ./packages/*.deb)
-- export TRAVIS_TAG=${TRAVIS_TAG:-$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)}
-- git tag $TRAVIS_TAG
 deploy:
   provider: releases
   skip_cleanup: true
