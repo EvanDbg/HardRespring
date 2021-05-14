@@ -36,3 +36,15 @@ jobs:
       - name: build
         run: |
           make clean package FINALPACKAGE=1
+          export RELEASE_PKG_FILE=$(ls ./packages/*.deb)
+          echo $RELEASE_PKG_FILE
+          
+      - name: Automatic Releases
+        # You may pin to the exact commit or the version.
+        # uses: marvinpinto/action-automatic-releases@526ce12c6675bbe6e0e9a4169c90d09a3f7ad3e2
+        uses: marvinpinto/action-automatic-releases@v1.2.0
+        with:
+          # GitHub secret token
+          repo_token: "${GITHUB_TOKEN}"
+          # Assets to upload to the release
+          files: $RELEASE_PKG_FILE
