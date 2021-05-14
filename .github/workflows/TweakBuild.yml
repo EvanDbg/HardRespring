@@ -23,7 +23,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: theos env
         run: |
-          export THEOS=/opt/theos
+          export THEOS=/theos
           brew install dpkg ldid
           git clone --recursive git://github.com/theos/theos.git $THEOS
           make clean package FINALPACKAGE=1
