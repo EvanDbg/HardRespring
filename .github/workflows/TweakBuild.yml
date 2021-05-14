@@ -26,15 +26,7 @@ jobs:
           export THEOS=~/theos
           brew install dpkg ldid
           git clone --recursive git://github.com/theos/theos.git $THEOS
-
-      # Runs a set of commands using the runners shell
-      - name: theos env
-        run: |
           echo pwd
-          
-      # Runs a set of commands using the runners shell
-      - name: build
-        run: |
           make clean package FINALPACKAGE=1
           export RELEASE_PKG_FILE=$(ls ./packages/*.deb)
           echo $RELEASE_PKG_FILE
@@ -45,6 +37,6 @@ jobs:
         uses: marvinpinto/action-automatic-releases@v1.2.0
         with:
           # GitHub secret token
-          repo_token: "${GITHUB_TOKEN}"
+          repo_token: "${G_TOKEN}"
           # Assets to upload to the release
           files: $RELEASE_PKG_FILE
