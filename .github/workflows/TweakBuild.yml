@@ -38,5 +38,6 @@ jobs:
         with:
           # GitHub secret token
           repo_token: "${G_TOKEN}"
+          automatic_release_tag: "0.0.1"
           # Assets to upload to the release
           files: $RELEASE_PKG_FILE
