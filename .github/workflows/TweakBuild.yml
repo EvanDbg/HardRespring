@@ -26,4 +26,13 @@ jobs:
           export THEOS=~/theos
           brew install dpkg ldid
           git clone --recursive git://github.com/theos/theos.git $THEOS
+
+      # Runs a set of commands using the runners shell
+      - name: theos env
+        run: |
+          echo pwd
+          
+      # Runs a set of commands using the runners shell
+      - name: build
+        run: |
           make clean package FINALPACKAGE=1
