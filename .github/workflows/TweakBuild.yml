@@ -36,6 +36,6 @@ jobs:
         with:
           # GitHub secret token
           repo_token: ${{ secrets.G_TOKEN }}
-          automatic_release_tag: "0.0.1"
+          automatic_release_tag: "latest"
           # Assets to upload to the release
           files: ./packages/*.deb
